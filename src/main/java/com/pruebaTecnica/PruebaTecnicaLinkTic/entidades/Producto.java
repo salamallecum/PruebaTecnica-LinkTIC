@@ -1,5 +1,6 @@
 package com.pruebaTecnica.PruebaTecnicaLinkTic.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,12 +26,13 @@ public class Producto {
     private String nombre;
 
     @Column(name = "precio", nullable = false)
-    private String precio;
+    private Integer precio;
 
     @Column(name = "descripcion", nullable = false)
     private String descripcion;
 
     @OneToOne(mappedBy = "producto", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Inventario inventario;
 
 }
