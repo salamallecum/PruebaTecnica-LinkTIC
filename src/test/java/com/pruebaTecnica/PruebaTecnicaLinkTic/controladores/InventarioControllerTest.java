@@ -23,7 +23,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-//Clase de prueba que permite probar los EndPoints de la clase InventarioController
+//Clase de prueba que permite probar los EndPoints de la clase InventarioController mediante pruebas unitarias
 public class InventarioControllerTest {
 
     @Mock
@@ -45,6 +45,7 @@ public class InventarioControllerTest {
         producto = new Producto();
         producto.setId(1L);
         producto.setNombre("Arroz");
+        producto.setDescripcion("Arroz Diana");
         producto.setPrecio(5000);
         inventario = new Inventario();
         inventario.setProducto(producto);

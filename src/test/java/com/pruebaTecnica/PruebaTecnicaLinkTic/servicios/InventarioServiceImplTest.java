@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-//Clase de prueba que permite probar la implementación de la clase InventarioService con sus respectivos escenarios
+//Clase de prueba que permite probar la implementación de la clase InventarioService con sus respectivos escenarios mediante pruebas unitarias
 public class InventarioServiceImplTest {
 
     @Mock
@@ -40,6 +40,7 @@ public class InventarioServiceImplTest {
         producto = new Producto();
         producto.setId(1L);
         producto.setNombre("Laptop");
+        producto.setDescripcion("Laptop Acer premium");
         producto.setPrecio(1000);
         inventario = new Inventario();
         inventario.setProducto(producto);

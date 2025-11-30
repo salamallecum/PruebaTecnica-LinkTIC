@@ -22,7 +22,7 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-//Clase de prueba que permite probar los EndPoints de la clase ProductoController
+//Clase de prueba que permite probar los EndPoints de la clase ProductoController mediante pruebas unitarias
 public class ProductoControllerTest {
 
     @Mock
@@ -46,6 +46,7 @@ public class ProductoControllerTest {
         producto = new Producto();
         producto.setId(1L);
         producto.setNombre("Xbox 360");
+        producto.setDescripcion("Xbox 360 con kinect");
         producto.setPrecio(15000);
         inventario = new Inventario();
         inventario.setProducto(producto);
@@ -54,6 +55,7 @@ public class ProductoControllerTest {
         producto1 = new Producto();
         producto1.setId(2L);
         producto1.setNombre("Amazon Alexa");
+        producto1.setDescripcion("Amazon Alexa");
         producto1.setPrecio(5300);
         inventario1 = new Inventario();
         inventario1.setProducto(producto1);

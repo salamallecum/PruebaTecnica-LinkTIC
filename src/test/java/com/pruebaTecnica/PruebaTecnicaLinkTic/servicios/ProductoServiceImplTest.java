@@ -23,7 +23,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-//Clase de prueba que permite probar la implementación de la clase ProductoService con sus respectivos escenarios
+//Clase de prueba que permite probar la implementación de la clase ProductoService con sus respectivos escenarios mediante pruebas unitarias
 public class ProductoServiceImplTest {
 
     @Mock
@@ -47,6 +47,7 @@ public class ProductoServiceImplTest {
         producto = new Producto();
         producto.setId(1L);
         producto.setNombre("Laptop");
+        producto.setDescripcion("Laptop Acer Premium");
         producto.setPrecio(1000);
         inventario = new Inventario();
         inventario.setProducto(producto);
@@ -55,6 +56,7 @@ public class ProductoServiceImplTest {
         producto1 = new Producto();
         producto1.setId(1L);
         producto1.setNombre("Reproductor Mp3");
+        producto1.setDescripcion("Ipod Nano");
         producto1.setPrecio(500);
         inventario1 = new Inventario();
         inventario1.setProducto(producto1);
