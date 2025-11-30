@@ -19,7 +19,7 @@ import java.util.List;
         info = @Info(
                 //Info de la aplicacion e info de contacto del desarrollador
                 title = "Prueba técnica LinkTIC",
-                description = "Api REST con la lógica de negocio propuesta por la prueba técnica LinkTIC.",
+                description = "Microservicio con la lógica de negocio propuesta por la prueba técnica LinkTIC.",
                 version = "1.0.0",
                 contact = @Contact(name = "Alejo Amaya", url = "https://miportafolioweb.free.nf", email = "luisalejandroamayatorres@gmail.com")
         ),
