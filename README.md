@@ -1,9 +1,9 @@
 **Codigo Fuente que da solución a la prueba ténica LinkTIC**
 
 **- Requisitos técnicos**  
-Lenguaje de programación utilizado: Java - SpringBoot
-Motor de base datos utilizado: MySQL
-Aplicación de consumo de endPoints: PostMan
+Lenguaje de programación utilizado: Java - SpringBoot  
+Motor de base datos utilizado: MySQL  
+Aplicación de consumo de endPoints: PostMan  
 
 **- Carpeta bd:** En esta carpeta encontrará el script de base de datos .sql para la creación de la estructura de tablas que usa la aplicación
 			      (ejecute este script en la base de datos en caso de que el proyecto no cree la estructura de tablas automáticamente) 
@@ -12,15 +12,15 @@ Aplicación de consumo de endPoints: PostMan
 
 
 **A- Instrucciones de instalación**  
-1- Descargue o clone con ayuda de git el presente repositorio.
-2- Importe el proyecto en el editor IntelliJ.
-3- Modifique los datos de conexión a la base de datos en el archivo application.properties ubicado en la ruta: src/main/resources
-4- En el motor de base de datos, cree una base de datos que se llame bd_pruebatecnica (allí se creará la estructura de tablas más adelante).
+1- Descargue o clone con ayuda de git el presente repositorio.  
+2- Importe el proyecto en el editor IntelliJ.  
+3- Modifique los datos de conexión a la base de datos en el archivo application.properties ubicado en la ruta: src/main/resources  
+4- En el motor de base de datos, cree una base de datos que se llame bd_pruebatecnica (allí se creará la estructura de tablas más adelante).  
 5- Ejecute la clase principal del proyecto PruebaTecnicaLinkTicApplication.java ubicada en la ruta src/main/java/com.pruebaTecnica.PruebaTecnicaLinkTic, el proyecto creará 
    automáticamente la estructura de tablas en la base de datos, de esta manera ya podrá consumir los endpoints de la aplicación y hacer consulta de la documentación del proyecto
-   en los siguientes links:
+   en los siguientes links:  
 
-    - Link de acceso a documentación Swagger: http://localhost:8080/pruebatecnica/api/v1/swagger-ui/index.html
+    - Link de acceso a documentación Swagger: http://localhost:8080/pruebatecnica/api/v1/swagger-ui/index.html  
     - Link de acceso a documentación: http://localhost:8080/pruebatecnica/api/v1/v3/api-docs  
 
 **B- Descripción de la arquitectura**  
