@@ -43,18 +43,15 @@ facilitando la implementación de la lógica de negocio, mapeo de entidades, pru
       cual podría interactuar con otros microservicios encargados de manejar otras características de una aplicación, tales como, la gestión y autenticación de usuarios, Gestión de eventos, etc.  
 
 **E- Flujo de compra implementado**  
--La aplicación se rige bajo el siguiente flujo de compra:
+-La aplicación se rige bajo el siguiente flujo de compra:  
 
-  1- El usuario ingresa el id del producto, seguido de la cantidad del producto a comprar y el dinero con el que va a pagar la compra.
-  2- El sistema valida que el id del producto corresponda con el id de un producto existente, si existe continua con el siguiente paso, de lo contrario, arrojará una excepción.
-  3- El sistema valida que la cantidad de producto solicitada por el usuario sea menor o igual a la cantidad de producto registrada en inventario, si es así, continua con el siguiente paso, de lo contrario, arrojará una excepción.
-  4- El sistema valida que el monto de dinero suministrado por el usuario sea menor o igual al valor a pagar por los productos, si es así calcula el dinero de cambio a dar al usuario, de lo contrario, arrojará una excepción. 
+  1- El usuario ingresa el id del producto, seguido de la cantidad del producto a comprar y el dinero con el que va a pagar la compra.  
+  2- El sistema valida que el id del producto corresponda con el id de un producto existente, si existe continua con el siguiente paso, de lo contrario, arrojará una excepción.  
+  3- El sistema valida que la cantidad de producto solicitada por el usuario sea menor o igual a la cantidad de producto registrada en inventario, si es así, continua con el siguiente paso, de lo contrario, arrojará una excepción.  
+  4- El sistema valida que el monto de dinero suministrado por el usuario sea menor o igual al valor a pagar por los productos, si es así calcula el dinero de cambio a dar al usuario, de lo contrario, arrojará una excepción.  
   5- Finalmente el sistema avala la transacción, actualiza el inventario del producto en cuestión con la diferencia entre la cantidad de producto solicitada y la cantidad de producto registrada en inventario,
-     retorna el resultado de la transacción como transacción exitosa junto con la información de la compra realizada (nombre de producto, cantidad, valor unitario, valor a pagar, dinero recibido, dinero de cambio).
+     retorna el resultado de la transacción como transacción exitosa junto con la información de la compra realizada (nombre de producto, cantidad, valor unitario, valor a pagar, dinero recibido, dinero de cambio).  
 
-**F- Uso de IA**  
-Para el presente proyecto se utilizó como herramienta de inteligencia artificial Copilot y Gemini IA, su asesoría estuvo orientada en la refactorización del código de las pruebas unitarias 
-y de integración, identificando posibles redundancias en el código y mejoras en la utilización de dependencias.
-
+**F- Uso de IA**    
 Para el presente proyecto se utilizó como herramienta de inteligencia artificial Copilot y Gemini IA, su asesoría estuvo orientada en la refactorización del código de las pruebas unitarias 
 y de integración, identificando posibles redundancias en el código y mejoras en la utilización de dependencias.
