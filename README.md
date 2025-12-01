@@ -20,14 +20,14 @@ Aplicación de consumo de endPoints: PostMan
    automáticamente la estructura de tablas en la base de datos, de esta manera ya podrá consumir los endpoints de la aplicación y hacer consulta de la documentación del proyecto
    en los siguientes links:  
 
-    - Link de acceso a documentación Swagger: http://localhost:8080/pruebatecnica/api/v1/swagger-ui/index.html  
-    - Link de acceso a documentación: http://localhost:8080/pruebatecnica/api/v1/v3/api-docs  
+ - Link de acceso a documentación Swagger: http://localhost:8080/pruebatecnica/api/v1/swagger-ui/index.html  
+ - Link de acceso a documentación: http://localhost:8080/pruebatecnica/api/v1/v3/api-docs  
 
 **B- Descripción de la arquitectura**  
 El presente proyecto se desarrolló bajo la arquitectura basada en capas (también conocida como Layered Architecture) lo cual permite que el sistema se organice en capas independientes 
 facilitando la implementación de la lógica de negocio, mapeo de entidades, pruebas unitarias, pruebas de integración, manejo de excepciones, mantenimiento y escalabilidad a largo plazo. 
 
-**C- Diagrama de arquitectura
+****C- Diagrama de arquitectura**  
 **<img width="1428" height="441" alt="Arquitectura microservicio - Gestión de productos drawio" src="https://github.com/user-attachments/assets/f56bd106-3a4a-4227-aca2-1e00163bfeb6" />
 
 **D- Decisiones técnicas**  
