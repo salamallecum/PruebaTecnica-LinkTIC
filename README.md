@@ -33,7 +33,7 @@ facilitando la implementación de la lógica de negocio, mapeo de entidades, pru
 **D- Decisiones técnicas**  
 - Se desarrolló el presente proyecto teniendo en cuenta las siguientes premisas:
    
-    - Se implementó el endPoint comprarProducto en la clase ProductoController, de esta manera hay uniformidad en el funcionamiento de la entidad Producto en la capa
+	- Se implementó el endPoint comprarProducto en la clase ProductoController, de esta manera hay uniformidad en el funcionamiento de la entidad Producto en la capa
       controlador y se garantiza la integridad de funcionalidades ligadas a una misma entidad, en la función comprarProducto el objeto de tipo producto es el principal implicado porque la mayoría de sus atributos (nombre y precio) forman parte del resultado de la 
       transacción, resultaba más eficiente utilizar la dependencia que tiene la entidad Inventario con la entidad Producto a través de su atributo producto_id, para así evaluar la cantidad disponible 
       de un producto para a partir de ahí avalar o restringir mediante una excepción la compra del producto, que tener el endPoint comprarProducto en la clase InventarioController generando desorden en el manejo de la entidad producto y
@@ -45,7 +45,7 @@ facilitando la implementación de la lógica de negocio, mapeo de entidades, pru
 **E- Flujo de compra implementado**  
 -La aplicación se rige bajo el siguiente flujo de compra:  
 
-  1- El usuario ingresa el id del producto, seguido de la cantidad del producto a comprar y el dinero con el que va a pagar la compra.  
+  	1- El usuario ingresa el id del producto, seguido de la cantidad del producto a comprar y el dinero con el que va a pagar la compra.  
   2- El sistema valida que el id del producto corresponda con el id de un producto existente, si existe continua con el siguiente paso, de lo contrario, arrojará una excepción.  
   3- El sistema valida que la cantidad de producto solicitada por el usuario sea menor o igual a la cantidad de producto registrada en inventario, si es así, continua con el siguiente paso, de lo contrario, arrojará una excepción.  
   4- El sistema valida que el monto de dinero suministrado por el usuario sea menor o igual al valor a pagar por los productos, si es así calcula el dinero de cambio a dar al usuario, de lo contrario, arrojará una excepción.  
