@@ -8,7 +8,7 @@ Aplicación de consumo de endPoints: PostMan
 **- Carpeta bd:** En esta carpeta encontrará el script de base de datos .sql para la creación de la estructura de tablas que usa la aplicación
 			      (ejecute este script en la base de datos en caso de que el proyecto no cree la estructura de tablas automáticamente) 
 
-**- Carpeta PostMan:** En esta carpeta encontrará un archivo .JSON con el que podrá importar a su postman la colección de peticiones necesarias para el consuma de los endpoints de la aplicación.
+**- Carpeta PostMan:** En esta carpeta encontrará un archivo .JSON con el que podrá importar a su postman la colección de peticiones necesarias para el consumo de los endpoints de la aplicación.
 
 
 **A- Instrucciones de instalación**  
